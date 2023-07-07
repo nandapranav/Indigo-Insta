@@ -8,23 +8,6 @@
     <h1><u>PN Group Of Companies</u></h1>
     <h1>Official Home Page</h1>
     <hr>
-    {% if user_code %}
-    <ol>
-      <li>To sign in, type <b>{{ user_code }}</b> into
-        <a href='{{ auth_uri }}' target=_blank>{{ auth_uri }}</a>
-        to authenticate.
-      </li>
-      <li>And then <a href="{{ url_for('auth_response') }}">proceed</a>.</li>
-    </ol>
-    {% else %}
-    <button><a href='{{ auth_uri }}'>Sign In</a></button>
-    {% endif %}
-
-    {% if config.get("B2C_RESET_PASSWORD_AUTHORITY") %}
-    <a href="{{config.get('B2C_RESET_PASSWORD_AUTHORITY')}}?client_id={{config.get('CLIENT_ID')}}">Reset Password</a>
-    {% endif %}
-
-
     <p>
       PN Group of Companies has been a paragon of success and achievement, demonstrating unparalleled excellence across various industries. With a visionary leadership and a dedicated team, the company has consistently surpassed expectations, solidifying its position as a global powerhouse. Here are some of the remarkable achievements and successes of PN Group of Companies:<br><br>
 
@@ -51,7 +34,7 @@
 These achievements and successes of PN Group of Companies showcase their unwavering commitment to excellence, innovation, and societal impact. Through their visionary leadership and dedication to surpassing expectations, they have truly established themselves as an industry powerhouse on a global scale.
     </p>
     <hr>
-    <footer style="text-align: right">PN Group Of Companies Official Microsoft Log In Page {{ version }}</footer>
+    <footer style="text-align: right">PN Group Of Companies Official Microsoft Log In Page</footer>
 </body>
 
 
