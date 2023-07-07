@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Microsoft Identity Python Web App: Login</title>
+    <title>PN Group Of Companies Official Home Page</title>
 </head>
 <body>
-    <h1>Microsoft Identity Python Web App</h1>
-
+    <h1><u>PN Group Of Companies</u></h1>
+    <h1>Official Home Page</h1>
+    <hr>
     {% if user_code %}
     <ol>
       <li>To sign in, type <b>{{ user_code }}</b> into
@@ -16,15 +17,64 @@
       <li>And then <a href="{{ url_for('auth_response') }}">proceed</a>.</li>
     </ol>
     {% else %}
-    <ul><li><a href='{{ auth_uri }}'>Sign In</a></li></ul>
+    <button><a href='{{ auth_uri }}'>Sign In</a></button>
     {% endif %}
 
     {% if config.get("B2C_RESET_PASSWORD_AUTHORITY") %}
     <a href="{{config.get('B2C_RESET_PASSWORD_AUTHORITY')}}?client_id={{config.get('CLIENT_ID')}}">Reset Password</a>
     {% endif %}
 
+
+    <p>
+      PN Group of Companies has been a paragon of success and achievement, demonstrating unparalleled excellence across various industries. With a visionary leadership and a dedicated team, the company has consistently surpassed expectations, solidifying its position as a global powerhouse. Here are some of the remarkable achievements and successes of PN Group of Companies:<br><br>
+
+<u>Global Expansion</u>: PN Group of Companies has successfully expanded its operations worldwide, establishing a strong presence in multiple countries across diverse industries. Their ability to adapt to different markets and cultures has been instrumental in their global success.<br><br>
+
+<u>Market Leadership</u>: The company has emerged as a market leader in several sectors, setting industry standards and driving innovation. Their commitment to quality, customer satisfaction, and cutting-edge technology has allowed them to stay ahead of the competition consistently.<br><br>
+
+<u>Revenue Growth</u>: PN Group of Companies has achieved exceptional revenue growth year after year, showcasing their prowess in generating profitable business models. Their strategic planning, astute financial management, and effective risk mitigation strategies have contributed to their impressive financial performance.<br><br>
+
+<u>Diversified Portfolio</u>: The company boasts a diverse portfolio, encompassing a wide range of industries such as technology, real estate, healthcare, energy, and more. This diversification has provided a strong foundation for sustainable growth and has mitigated risks associated with relying on a single sector.<br><br>
+
+<u>Innovation and Research</u>: PN Group of Companies has fostered a culture of innovation, investing significantly in research and development activities. Their breakthrough advancements and cutting-edge solutions have revolutionized industries, bringing about positive change and improving the lives of people worldwide.<br><br>
+
+<u>Corporate Social Responsibility</u>: The group has consistently demonstrated a strong commitment to corporate social responsibility, making a positive impact on society. Through various initiatives, they have supported education, healthcare, environmental conservation, and community development, making them a socially conscious organization.<br><br>
+
+<u>Industry Recognition</u>: PN Group of Companies has been widely recognized and celebrated for its achievements and contributions. The company has received numerous prestigious awards and accolades, both at the national and international levels, affirming its position as an industry leader.<br><br>
+
+<u>Talent Development</u>: The company places great importance on talent development and has established comprehensive training programs and mentorship initiatives. By nurturing and empowering their employees, PN Group of Companies has created a highly skilled and motivated workforce, driving their continued success.<br><br>
+
+<u>Sustainable Practices</u>: PN Group of Companies is dedicated to sustainable business practices, focusing on environmental conservation and resource efficiency. Their commitment to sustainability has not only reduced their environmental impact but has also attracted environmentally conscious consumers and investors.<br><br>
+
+<u>Customer Satisfaction</u>: PN Group of Companies has built a strong reputation for delivering exceptional customer experiences. By prioritizing customer satisfaction and continuously improving their products and services, they have fostered long-lasting relationships with their clients, resulting in high customer loyalty and repeat business.<br><br>
+
+These achievements and successes of PN Group of Companies showcase their unwavering commitment to excellence, innovation, and societal impact. Through their visionary leadership and dedication to surpassing expectations, they have truly established themselves as an industry powerhouse on a global scale.
+    </p>
     <hr>
-    <footer style="text-align: right">Microsoft identity platform Web App Sample {{ version }}</footer>
+    <footer style="text-align: right">PN Group Of Companies Official Microsoft Log In Page {{ version }}</footer>
 </body>
+
+
+<style>
+  h1{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+
+  }
+  button{
+    position: absolute;
+    top:10px;
+    font-size: 30px;
+    text-align: center;
+    background-color:darkcyan;
+  }
+
+  p{
+    font-size: 25px;
+    margin: 40px;
+  }
+
+</style>
 </html>
 
