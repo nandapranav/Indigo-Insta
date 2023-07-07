@@ -61,7 +61,8 @@ def index():
 #        # You can remove this check from your production code.
 #        return render_template('config_error.html')
 #   if not auth.get_user():
-#        return redirect(url_for("login"))
+#        return redirect(url_for("login")) 
+   print(auth.get_user())
    return render_template('index.html', user=auth.get_user(), version=__version__)
 
 @app.route('/favicon.ico')
