@@ -7,3 +7,6 @@ requests>=2,<3
 identity>=0.2,<0.3
 python-dotenv<0.22
 gunicorn
+oauthlib==3.0.1
+pyOpenSSL==19.0.0
+Flask-Login==0.4.1
