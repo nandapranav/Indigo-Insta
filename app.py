@@ -19,7 +19,6 @@ import os
 import sqlite3
 
 # Third-party libraries
-from flask import Flask, redirect, request, url_for
 from flask_login import (
     LoginManager,
     current_user,
